@@ -1,2 +1,2 @@
 # wzone
-Connecting recycling company to household  
+Connecting recycling company to household  and make
