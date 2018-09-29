@@ -1,13 +1,16 @@
-package rw.wastezone.waste;
+package rw.wastezone.waste.ui.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class IntroSliderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_slider);
+        startActivity(new Intent(this, HomeActivity.class));
+        finish();
     }
 }
