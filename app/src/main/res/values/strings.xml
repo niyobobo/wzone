@@ -3,10 +3,11 @@
     <string name="home">Home</string>
     <string name="products">Products</string>
     <string name="account">Account</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="description">Description</string>
     <string name="product_name">Product name</string>
     <string name="rwf_3000">RWF 3000</string>
+    <string name="my_products">My products</string>
+    <string name="it_equipment">IT Equipment</string>
+    <string name="home_appliance">Home appliance</string>
+    <string name="category">Category</string>
 </resources>
