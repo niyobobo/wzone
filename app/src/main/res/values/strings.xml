@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WasteZone</string>
+    <string name="app_name">Wastezon</string>
     <string name="home">Home</string>
     <string name="products">Products</string>
     <string name="account">Account</string>
@@ -10,4 +10,5 @@
     <string name="it_equipment">IT Equipment</string>
     <string name="home_appliance">Home appliance</string>
     <string name="category">Category</string>
+    <string name="send">Send</string>
 </resources>

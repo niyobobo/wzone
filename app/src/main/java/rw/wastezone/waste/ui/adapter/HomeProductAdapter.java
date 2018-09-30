@@ -12,7 +12,14 @@ import rw.wastezone.waste.R;
 
 public class HomeProductAdapter extends RecyclerView.Adapter<HomeProductAdapter.ViewHolder> {
 
-    public HomeProductAdapter() {
+    private ListItemSelected itemSelected;
+
+    public interface ListItemSelected {
+        void onItemSelected();
+    }
+
+    public HomeProductAdapter(ListItemSelected itemSelected) {
+        this.itemSelected = itemSelected;
     }
 
     @NonNull
@@ -27,6 +34,7 @@ public class HomeProductAdapter extends RecyclerView.Adapter<HomeProductAdapter.
 
         holder.layout.setOnClickListener(v -> {
             holder.imageView.setImageResource(R.drawable.ic_selected);
+            itemSelected.onItemSelected();
         });
     }
 
