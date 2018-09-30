@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -30,6 +33,12 @@ public class MainFragment extends Fragment implements MainFragmentAdapter.OnSele
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         recyclerView.setAdapter(new MainFragmentAdapter(getContext(), this));
+
+        FloatingActionButton actionButton= view.findViewById(R.id.fab_add_new);
+        actionButton.setOnClickListener(v -> {
+            Toast.makeText(getContext(), "Adding new product......", Toast.LENGTH_SHORT).show();
+        });
+
         return view;
     }
 
